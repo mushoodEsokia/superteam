@@ -1,0 +1,43 @@
+top_homepage:
+    path:     /
+    defaults: { _controller: TopBundle:Default:index }
+
+top_test:
+    path:     /test
+    defaults: { _controller: TopBundle:Default:index }
+    
+top_fake:
+    path:     /fake
+    defaults: { _controller: TopBundle:Default:show }    
+
+top_new:
+    path:     /new
+    defaults: { _controller: TopBundle:Troll:show }     
+    
+top_index:
+    path:     /index
+    defaults: { _controller: TopBundle:Troll:index }  
+    
+top_rest_skills:
+    path:     /skills
+    defaults: { _controller: TopBundle:Rest:getSkills }  
+    
+top_rest_skill:
+    path:     /skill/{id}
+    defaults: { _controller: TopBundle:Rest:getSkill }   
+    
+top_rest_skill_user:
+    path:     /skill/user/{id}
+    defaults: { _controller: TopBundle:Rest:getSkilledUser }     
+
+top_rest_users:
+    path:     /users
+    defaults: { _controller: TopBundle:Rest:getUsers } 
+    
+top_rest_user:
+    path:     /user/{id}
+    defaults: { _controller: TopBundle:Rest:getUser }    
+
+top_rest_teams:
+    path:     /teams
+    defaults: { _controller: TopBundle:Rest:getTeams }     
